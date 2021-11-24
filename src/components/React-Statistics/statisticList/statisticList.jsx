@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types'
-import StatisticItem from './statisticItem'
+import s from './statisticList.module.css'
+import StatisticItem from '../statisticItem/statisticItem'
 
 function StatisticList({ stats }) {
   return (
-    <ul className="stat-list">
+    <ul className={s.list}>
       {stats.map((el) => (
         <StatisticItem
           key={el.id}

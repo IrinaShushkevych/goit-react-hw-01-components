@@ -1,0 +1,12 @@
+.statistics {
+  background-color: rgb(96, 176, 238);
+  width: 300px;
+  border-radius: 30px;
+}
+
+.title {
+  font-size: 36px;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}

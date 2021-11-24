@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types'
-import ProfileDescription from './profileDescription'
-import ProfileStats from './profileStats'
+import s from './profile.module.css'
+import ProfileDescription from '../profileDescription/profileDescription'
+import ProfileStats from '../profileStats/profileStats'
 
 function Profile({ user }) {
   return (
-    <div className="profile">
+    <div className={s.profile}>
       <ProfileDescription
         username={user.username}
         tag={user.tag}
