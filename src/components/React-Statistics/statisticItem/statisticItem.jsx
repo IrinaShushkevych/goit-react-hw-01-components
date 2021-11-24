@@ -3,7 +3,6 @@ import s from './statisticItem.module.css'
 
 function getColor() {
   const color = Math.random().toString(16).slice(2, 8)
-  console.log(color)
   return `#${color}`
 }
 
