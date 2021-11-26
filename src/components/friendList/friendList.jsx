@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import s from './friendList.module.css'
-import FriendItem from '../friendItem/friendItem'
+import s from './FriendList.module.css'
+import FriendItem from '../FriendItem/FriendItem'
 
 function FriendList({ friendlist = [] }) {
   return (

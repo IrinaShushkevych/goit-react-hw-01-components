@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import s from './profile.module.css'
+import s from './Profile.module.css'
 
 function Profile({ username, tag, location, avatar, stats = {} }) {
   return (
@@ -14,15 +14,15 @@ function Profile({ username, tag, location, avatar, stats = {} }) {
       <ul className={s.list}>
         <li className={s.item}>
           <span className={s.label}>Followers</span>
-          <span className={s.quantity}>{stats.followers ?? 0}</span>
+          <span className={s.quantity}>{stats.followers}</span>
         </li>
         <li className={s.item}>
           <span className={s.label}>Views</span>
-          <span className={s.quantity}>{stats.views ?? 0}</span>
+          <span className={s.quantity}>{stats.views}</span>
         </li>
         <li className={s.item}>
           <span className={s.label}>Likes</span>
-          <span className={s.quantity}>{stats.likes ?? 0}</span>
+          <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -34,6 +34,10 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.object,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
 }
 export default Profile
