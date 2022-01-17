@@ -1,3 +1,4 @@
+//created by Irina Shushkevych
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
